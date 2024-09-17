@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arpit">
+    <meta name="keywords" content="Registration Form,Form Validation,Form, Students Record, User Registration,Student Management">
+    <meta name="description" content="A user-friendly student registration site built with HTML, CSS, and JavaScript. Easily register and manage student information with a responsive design, real-time validation, and smooth user experience.">
+
+    <title>Student Registration System</title>
+
+    <link rel="shortcut icon" href="registration favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-title">
+            <h1>Student Registration System</h1>
+        </div>
+    
+        <p class="para">This student registration system allows users to access and manage student details such as name, ID, email, and contact information. The system stores logged data in the browser’s local storage, ensuring that student data persists when the page is reloaded or the browser is restarted. All logged data will be fetched and displayed when the page is loaded.Additionally, the system provides an interface for users to view, edit, and manage the student details efficiently, enhancing the user experience with persistent data storage and dynamic content updating without the need for a backend server.</p>
+    </header>
+    
+
+<main class="outer">
+    <form class="registrationForm">
+            <label for="stuname">Student Name:</label>
+            <input type="text" id="stuname" class="textarea" pattern="[A-Za-z\s]+" title="Only letters are allowed" required>
+        
+            <label for="stuid">Student ID:</label>
+            <input type="number" id="stuid" class="textarea">
+
+            <label for="email">Email ID:</label>
+            <input type="email" name="email" id="email" class="textarea" required>          
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" class="textarea" pattern="\d{10}" title="Contact Number must be a 10-digit number" required>  
+            
+            <div id="btnAdd">
+                <button class="add">Add</button>
+            </div>
+    </form>
+
+    <section class="details">
+
+        <div class="record">
+            <span class="item name"><h3>Name</h3> </span>
+            <span class="item"> <h3>Id</h3></span>
+            <span class="item" id="emailid"><h3>Email Id</h3></span>
+            <span class="item"><h3>Contact No.</h3></span>
+        </div>
+        
+        <div class="info">
+            
+        </div>
+
+    </section>
+
+</main>
+
+    <script src="index.js"></script>
+    <!-- <script src="option.js"></script> -->
+</body>
+</html>

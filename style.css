@@ -1,0 +1,167 @@
+body {
+    background: linear-gradient(135deg, #0f0f0f, #2d2d2d, #1a1a1a, #111); 
+    color: #e0e0e0; /* Light gray text for contrast */
+    overflow-x: hidden;
+}
+
+.container-title{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 35px;
+    text-shadow: 3px 1px black;
+    color: white;
+}
+
+.para{
+    font-size: 20px;
+    padding: 0px 50px;
+}
+
+.outer{
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 40% 58%;
+}
+
+.registrationForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    height: 540px;
+}
+
+label{
+   font-size: 23px;
+   margin: 12px 0px;
+   font-weight: bolder;
+}
+
+.textarea{
+    width: 500px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border-color: #333;
+    font-size: 20px;
+    overflow: auto;
+    overflow-x: hidden;    
+    height: 40px;
+}
+
+#btnAdd{
+    margin: 10px 200px;
+}
+
+.add{
+    height: 40px;
+    color: white;
+    background-color: #4CAF50;
+    width: 80px;
+    border: none;
+    border-radius: 19px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0px 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.add:hover{
+    background-color: #45a049; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.details {
+    height: 600px; 
+    padding-right: 15px;
+    box-sizing: border-box; 
+} 
+
+.record{
+    height: 50px;
+    width: 78%;
+    margin: 18px 0px;
+    border: 3px solid #6a5acd;
+    display: flex;
+    gap: 44px;
+    align-items: center;
+}
+.record span{
+    margin-left: 41px;
+    font-size: 20px; 
+}
+
+#emailid{
+    margin-right: 65px;
+}
+
+
+.info {
+    height: 500px;
+    box-sizing: border-box;
+    overflow-y:auto;
+}
+
+.product{
+    width: 78%;
+    height: 50px;
+    margin: 15px 0px;
+    border: 3px solid #6a5acd;
+    display: flex;
+    gap: 23px;
+    align-items: center;
+}
+
+.product span{
+    margin-left: 36px;
+    font-size: 20px; 
+}
+
+.box{
+    display: flex;
+    align-items: center;
+}
+
+.input1{
+    width: 133px;
+}
+
+.input2{
+    width: 47px;
+}
+
+span.input3{
+    width: 156px;
+    margin-right: 28px;
+}
+
+.name{
+    width: 107px;
+}
+
+
+@media (max-width: 1050px) {
+    .outer {
+        grid-template-columns: 1fr;  
+    }
+
+    .registrationForm, .details {
+        width: 100%;  
+        padding-left: 10px;  
+    }
+
+    .textarea {
+        width: 100%;  
+    }
+
+    .product {
+        width: 100%; 
+    }
+    #btnAdd{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
